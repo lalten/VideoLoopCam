@@ -24,8 +24,8 @@ ffmpeg \
         loop=loop=-1:size=1:start=0
         [overlayframe];
     [in3][overlayframe]
-        framestep=2,
         blend=all_mode=average,
+        framestep=step=2,
         hflip,
         format=yuv420p
         [preview]
